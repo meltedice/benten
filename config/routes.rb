@@ -5,6 +5,7 @@ Benten::Application.routes.draw do
   end
   namespace :webrtc do
     get :echo
+    get :snapshot
   end
 
   # The priority is based upon order of creation:
