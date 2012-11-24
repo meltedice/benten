@@ -8,6 +8,7 @@ Benten::Application.routes.draw do
     get :snapshot
     get :p2pfake
     get :p2pfakestun
+    get :p2p
   end
 
   # The priority is based upon order of creation:
