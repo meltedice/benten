@@ -1,5 +1,5 @@
 # https://webrtc-demos.appspot.com/html/pc1.html
-dispatcher '^/webrtc/p2pfake', ->
+dispatcher '^/webrtc/p2pfake$', ->
   lvideo = $("#lvideo")[0]
   rvideo = $("#rvideo")[0]
   startLocalVideoButton  = $("#startLocalVideo")

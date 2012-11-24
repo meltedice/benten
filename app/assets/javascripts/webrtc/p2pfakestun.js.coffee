@@ -1,4 +1,4 @@
-dispatcher '^/webrtc/p2pfakestun', ->
+dispatcher '^/webrtc/p2pfakestun$', ->
   lvideo = $("#lvideo")[0]
   rvideo = $("#rvideo")[0]
   startLocalVideoButton  = $("#startLocalVideo")
@@ -80,8 +80,9 @@ dispatcher '^/webrtc/p2pfakestun', ->
     startRemoteVideoButton.attr('disabled', false)
 
   onRAddStream = (e) ->
-    rvideo.src = webkitURL.createObjectURL(e.stream)
-    trace("Received remote stream")
+    url = webkitURL.createObjectURL(e.stream)
+    rvideo.src = url
+    trace("!!!!!!!!!!!!!!!!!Received remote stream: " + url)
 
   onLIceCandidate = (event) ->
     if (event.candidate)

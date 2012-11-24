@@ -1,4 +1,4 @@
-dispatcher '^/webrtc/p2p', ->
+dispatcher '^/webrtc/p2p$', ->
   lvideo = $("#lvideo")[0]
   rvideo = $("#rvideo")[0]
   startLocalVideoButton    = $("#startLocalVideo")
