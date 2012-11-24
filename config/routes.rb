@@ -6,6 +6,7 @@ Benten::Application.routes.draw do
   namespace :webrtc do
     get :echo
     get :snapshot
+    get :p2pfake
   end
 
   # The priority is based upon order of creation:
